@@ -1,5 +1,5 @@
 package com.example.demo.controllers;
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.demo.models.Customer;
 import com.example.demo.models.Role;
 import com.example.demo.repositories.CustomerRepository;
@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/auth")
 public class AuthController {
 
